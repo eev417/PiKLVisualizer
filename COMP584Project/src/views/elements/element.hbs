@@ -1,0 +1,24 @@
+
+
+<h1>{{header}}</h1>
+        <div class="row">
+           <div class="container-fluid">
+                <div class="container d-flex flex-wrap align-items-center justify-content-center">
+                     {{#each items}}
+                        <article class="item-wrapper left">
+                            <div class="preview">
+                                <a class="hover-trigger" id="heatmap" href="/element/{{../element.type.abbreviation}}/{{this.link}}">
+                                    <div class="hover-wrapper">
+                                        <span class="preview-image" style="background-image: url({{this.image}});"></span>
+                                        <span class="hover-name">{{@key}}</span>
+                                    </div>
+                                    <i class="hover-icon fa fa-external-link"></i>
+                                </a>
+                            </div>
+                        </article>
+                    {{/each}}
+                   
+                </div>
+            </div>
+        </div>
+ </div>
